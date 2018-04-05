@@ -58,12 +58,12 @@ void schrage(permutacja& optymalna)
 				}
 			}
 		}
-		if (G.empty() && !N.empty()) { //jezeli nic nie znalazł a w nieuszeregowanych są jeszcze jakies procesy
-			t = N.top()->Rpi;  // to t = pierwszy.RPi
+		if (G.empty() && !N.empty()) {
+			t = N.top()->Rpi;
 		} else {
 			result = G.top();
 			result->Cpi = t;
-			t = t + G.top()->Ppi; //t=stary t+ppi
+			t = t + G.top()->Ppi;
 			cmax = G.top()->Qpi + t;
 			if (cmax >= Cmax) {
 				Cmax = cmax; //Cmax=t^+qpi (chyba, ze wieksze jest Cmax stare)
