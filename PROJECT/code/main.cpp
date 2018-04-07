@@ -12,3 +12,4 @@ int main()
 }
 //dziennik zmian:
 //spodek: 21:52
+// przez QT 22:09
