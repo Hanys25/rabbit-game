@@ -10,3 +10,5 @@ int main()
 	std::cout << "Wynik: " << start(schrag) << std::endl;
 	return 1;
 }
+//dziennik zmian:
+//spodek: 21:52
