@@ -1,15 +1,20 @@
-#include "src/carlier.h"
-
-#include <iostream>
+#include "sender.h"
+#include "receiver.h"
 
 int main()
 {
-	int schrag = 1;
-	std::cout << "Który Spodek?:" << std::endl;
-	std::cin >> schrag;
-	std::cout << "Wynik: " << start(schrag) << std::endl;
-	return 1;
+
+Sender a;
+Receiver b;
+
+
+char character='p';
+
+a.SendToFile(character);
+b.ReceiveFromFile();
+b.ShowValue();
+
+
+return 0;
 }
-//dziennik zmian:
-//spodek: 21:52
-// przez QT 22:09
+
