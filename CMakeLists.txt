@@ -9,7 +9,7 @@ set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR})
 set(LIBRARY_OUTPUT_PATH ${CMAKE_BINARY_DIR})
 
 include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
-include_directories(.)
+include_directories(PROJECT)
 
 file(GLOB code_SRC
     "PROJECT/code/src/*.cpp"
